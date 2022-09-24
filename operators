@@ -1,4 +1,3 @@
-# operators
 # sum and differnce
 a=int(input())
 b=int(input())

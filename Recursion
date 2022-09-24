@@ -1,0 +1,78 @@
+# Binary Equivalent of a Number using Recursion
+
+    def covert(x):
+        if x>0:
+            covert(x//2)
+            print(x%2,end="")
+    dec=int(input())
+    covert(dec)
+    
+
+# Fibonacci Series
+
+    Adef fib (n):
+        if n <=1:
+            return n
+        else:
+            return(fib(n-1)+fib(n-2))
+    terms=int(input())
+    if terms>0:
+        for i in range (terms):
+            print(fib(i))
+            
+    
+# Odd or Even
+
+    def evenorodd(x):
+        if (x>0):
+            if (x%2==0):
+                print("even!")
+            else:
+                print("odd!")
+
+    a=int(input()) 
+    evenorodd(a)
+    
+    
+# Factorial
+
+    def fact(x):
+        i=1
+        b=1
+        while i<=x:
+            b*=i
+            i=i+1
+        print(b)
+    a=int(input())
+    fact(a)
+    
+    
+# LCM of two numbers
+
+    def lcm (x, y):
+        if x > y:
+            g=x
+        else:
+            g=x
+        while(True):
+            if((g % x ==0 )and (g % y == 0)):
+                lcm=g
+                break
+            g +=1
+        return lcm
+    a=int(input()) 
+    b=int(input())
+    print(lcm(a,b))
+    
+    
+# Decimal to Binary
+
+    def d2b(n):
+        if n > 1:
+            d2b(n//2)
+        print(n % 2 ,end='')    
+    d = int(input())
+    d2b(d)
+    print()
+    
+    
